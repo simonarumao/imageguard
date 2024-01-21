@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/image.css')}}">
+    <title>Forgery Detection Demo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Forgery Detection</h1>
+            <p>Image forgery detection is a technology that helps identify manipulated or fake images.
+               </p>
+        </section>
+        <section class="features" id="image-upload">
+            <div class="feature">
+                <h2>Image Forgery Detection</h2>
+                <p>Upload an image to check for forgeries.</p>
+                <form id="upload-form" enctype="multipart/form-data" action="/imgupload" method="post">
+                    <input type="file" id="image-upload" accept=".png, .jpg, .jpeg, .gif" multiple name="file">
+                    <br>
+                    <br>
+                    <button type="submit" id="upload-button">Upload Image</button>
+                </form>
+            </div>
+        
+    </main>
+    <footer id="about">
+        <p>&copy; 2023 Forgery Detection 18</p>
+    </footer>
+</body>
+</html>

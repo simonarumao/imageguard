@@ -1,0 +1,42 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file using url_for -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/image.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Forgery Detection Demo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/image">Image</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       <h1>Image Prediction Result</h1>
+    
+                {% if result %}
+                    <h3>{{ result }}</h3>
+                    <p>{{ prediction_text }}</p>
+
+                    {% if result == "This is a fake image" %}
+                    <img src="data:image/png;base64,{{ ela_img }}" alt="ELA Image">
+                    <img src="data:image/png;base64,{{ predi }}" alt="Tampered Region">
+                    {% endif %}
+                {% endif %}
+
+
+            </div>
+        </section>
+    </main>
+    <footer id="about">
+        <p>&copy; 2023 Forgery Detection 18</p>
+    </footer>
+</body>
+</html>

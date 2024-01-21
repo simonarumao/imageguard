@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Forgery Detection</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/image">Image</a></li>
+                <li><a href="/video">Video</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <H1 class="heading">ImageGuard</H1>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    <main>
+        
+        <section class="hero">
+            <h1>Welcome to Forgery Detection</h1>
+            <p>Protecting Your Digital Assets</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Image Forgery Detection</h2>
+                <p>Detect your image forgeries.</p>
+                <div class="button-container"></div>
+                <a href="/image" class="styled-button">IMAGE</a>
+
+            </div>
+          <div class="feature">
+                <h2>Video Forgery Detection</h2>
+                <p>Detect your Video forgeries</p>
+                <a href="/video" class="styled-button">VIDEO</a>
+
+            </div>
+          
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Forgery Detection 18</p>
+    </footer>
+</body>
+</html>

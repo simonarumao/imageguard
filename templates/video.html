@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/video.css')}}">
+    <title>Forgery Detection Demo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Forgery Detection Demo</h1>
+            <p>Video forgery detection is a technology that helps identify manipulated or fake Videos. </p>
+        </section>
+        
+            
+        </section>
+      <section class="features" id="video-upload">
+            <div class="feature">
+                <h2>Video Forgery Detection</h2>
+                <p>Protect your videos from manipulation.</p>
+                <form action="/predict" method="POST" id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="image-upload" accept="video/*" multiple>
+                    <br>
+                    <br>
+                    <button type="submit" id="upload-button">Detect Forgery</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer id="about">
+        <p>&copy; 2023 Forgery Detection 18</p>
+    </footer>
+</body>
+</html>

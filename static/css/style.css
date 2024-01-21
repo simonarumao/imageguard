@@ -1,0 +1,170 @@
+/* Reset some default styles for better consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav li {
+    margin: 0 20px;
+}
+nav li:hover{
+    background: #3a0c0c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('https://plus.unsplash.com/premium_photo-1673036823583-4ae84d61e981?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    color: #502020;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    
+}
+
+/* Features section styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.feature {
+    width: 300px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.styled-button {
+    background-color: #0074D9; /* Set the button background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 20px; /* Set the padding to control the button's size */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+    font-size: 16px; /* Set the font size */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.styled-button:hover {
+    background-color: #0056B3; /* Change the background color on hover */
+}
+h1{
+   
+    text-align: center;
+}
+
+.heading{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: size 1rem;
+    color: #0074D9;
+    text-align: center;
+    animation: colorChange 3s infinite alternate, scale 1s infinite alternate;
+}
+@keyframes colorChange {
+    0% {
+        color: #092c4a;
+    }
+    50% {
+        color: #25901b; /* Change to your desired color */
+    }
+    100% {
+        color: #b02325;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
+
+
+.feature {
+    background-color: #d3d1da;
+    border: 1px solid #572b2b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(112, 37, 37, 0.2);
+    
+    margin: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    color: #272121;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #210f0f;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+
+.styled-button {
+    background-color: #798792;
+    color: #242323;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.styled-button:hover {
+    background-color: #99a816;
+}
